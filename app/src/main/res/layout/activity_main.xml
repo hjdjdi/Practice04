@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Username input -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username"
+        android:inputType="text" />
+
+    <!-- Round indicator -->
+    <TextView
+        android:id="@+id/tvRound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Round: 1"
+        android:textSize="18sp"
+        android:paddingTop="8dp" />
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start New Game" />
+
+    <!-- 5x5 Bingo Grid -->
+    <GridLayout
+        android:id="@+id/gridBingo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="5"
+        android:rowCount="5" />
+
+    <!-- Status Text -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter username and press Start"
+        android:textSize="16sp" />
+
+</LinearLayout>
